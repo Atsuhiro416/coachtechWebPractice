@@ -342,7 +342,6 @@ header {
   background-size: cover;
   color: #f2f2f2;
   position: relative;
-  display: inline-block;
 }
 
 #company h2 {
@@ -365,7 +364,6 @@ header {
   background-size: cover;
   color: #f2f2f2;
   position: relative;
-  display: inline-block;
   margin-left: 132px;
 }
 
