@@ -50,6 +50,7 @@ a {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
+  text-decoration: none;
 }
 
 /* change colours to suit your needs */
@@ -156,7 +157,6 @@ header {
 
 .header-nav a {
   color: #f2f2ff;
-  text-decoration: none;
 }
 
 #eyecatch {
@@ -460,6 +460,5 @@ footer small {
 
 .footer-nav a {
   color: #f2f2ff;
-  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
