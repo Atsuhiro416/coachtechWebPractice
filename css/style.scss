@@ -260,6 +260,7 @@ header {
   }
 
   &-link {
+    display: block;
     padding: 5px 10px;
   }
 }
@@ -330,7 +331,7 @@ header {
       border: 1px solid;
       padding: 5px 10px;
       display: inline-block;
-      margin-left: 500px;
+      margin-left: 80%;
     }
   }
 
@@ -345,6 +346,11 @@ header {
 
 .company-recruit {
   height: 400px;
+
+  .logo {
+    text-align: center;
+    margin-top: 110px;
+  }
 }
 
 #company {
@@ -353,21 +359,21 @@ header {
   background: url(../img/img/company.jpeg) no-repeat;
   background-size: cover;
   color: #f2f2f2;
-  position: relative;
+  // position: relative;
   // display: inline-block;
 
   h2 {
-    position: absolute;
+    // position: absolute;
     font-size: 30px;
-    top: 40%;
-    left: 35%;
+    // top: 40%;
+    // left: 35%;
   }
 
-  p {
-    position: absolute;
-    top: 55%;
-    left: 42%;
-  }
+  // p {
+  //   position: absolute;
+  //   top: 55%;
+  //   left: 42%;
+  // }
 }
 
 #recruit {
@@ -376,22 +382,22 @@ header {
   background: url(../img/img/recruit.jpg) no-repeat;
   background-size: cover;
   color: #f2f2f2;
-  position: relative;
+  // position: relative;
   // display: inline-block;
   margin-left: 132px;
 
   h2 {
-    position: absolute;
+    // position: absolute;
     font-size: 30px;
-    top: 40%;
-    left: 42%;
+    // top: 40%;
+    // left: 42%;
   }
 
-  p {
-    position: absolute;
-    top: 57%;
-    left: 45%;
-  }
+  // p {
+  //   position: absolute;
+  //   top: 57%;
+  //   left: 45%;
+  // }
 }
 
 #faq-wrapper {
@@ -400,7 +406,7 @@ header {
   color: #f2f2f2;
 
   h2 {
-    font-size: 30px;
+    font-size: 35px;
     display: inline-block;
     margin-top: 35px;
     margin-left: 20px;
@@ -408,7 +414,7 @@ header {
 
   p {
     display: inline-block;
-    width: 85%;
+    width: 82%;
     text-align: center;
   }
 }
@@ -480,6 +486,185 @@ footer {
     }
     & a {
       color: #f2f2ff;
+    }
+  }
+}
+
+// スマホ版
+// --------------------------
+@media screen and (max-width: 768px) {
+
+  // html {
+  //   font-size: 62.5%;
+  // }
+
+  .wrap {
+    margin-bottom: 5%;
+  }
+
+  #hamburger {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    top: 15px;
+    right: 20px;
+    transition: 0.4px;
+
+    span {
+      position: absolute;
+      left: 2px;
+      display: block;
+      width: 35px;
+      height: 2px;
+      background-color: #fff;
+      transition: 0.8s;
+
+      &:nth-last-of-type(1) {
+        top: 10px;
+      }
+
+      &:nth-last-of-type(2) {
+        top: 20px;
+      }
+
+      &:nth-last-of-type(3) {
+        top: 30px;
+      }
+    }
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  #eyecatch > p {
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .news {
+    width: 100%;
+  }
+
+  #mission-wrapper {
+
+    & > img {
+      bottom: -10%;
+    }
+  }
+
+  .mission {
+
+    &-message {
+      top: 20%;
+      left: 15%;
+    }
+
+    &-description {
+      margin-bottom: 20px;
+    }
+
+    &-link {
+      width: 50%;
+    }
+  }
+
+  #service-wrapper h2 {
+    padding-top: 30px;
+    font-size: 300%;
+  }
+
+  .service {
+
+    &1, &2 {
+      width: 80%;
+      margin: 0 auto;
+
+      & > img {
+        position: static;
+        display: block;
+        width: 100%;
+      }
+    }
+
+    &2 {
+      margin-top: 50px;
+    }
+
+    &-card {
+      width: 86%;
+      padding: 20px;
+      position: static!important;
+      border: none;
+
+      & a {
+        margin-left: 50%;
+      }
+    }
+  }
+
+  .company-recruit {
+    width: 100%;
+    margin-bottom: 30px;
+
+    & .logo {
+      margin-top: 15%;
+    }
+  }
+
+  #company {
+    width: 100%;
+    height: 50%;
+
+  }
+
+  #recruit {
+    width: 100%;
+    margin-left: 0;
+    height: 50%;
+  }
+
+  #faq-wrapper {
+
+    p {
+      width: 40%;
+    }
+  }
+
+  #contact-wrapper {
+    padding-bottom: 10px;
+
+    h2 {
+      font-size: 40px;
+      padding-top: 40px;
+    }
+  }
+
+  .contact {
+
+    &-message, &-description {
+      width: 80%;
+      margin: 0 auto 30px;
+    }
+
+    &-description {
+      line-height: 1.5rem;
+    }
+  }
+
+  .footer {
+
+    &-logo {
+      margin: 0 auto;
+    }
+
+    &-nav {
+      display: none;
     }
   }
 }
